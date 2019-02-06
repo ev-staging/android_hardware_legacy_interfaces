@@ -3,6 +3,5 @@
 source $ANDROID_BUILD_TOP/system/tools/hidl/update-makefiles-helper.sh
 
 do_makefiles_update \
-  "vendor.lineage:hardware/lineage/interfaces" \
-  "android.hardware:hardware/interfaces" \
+  "vendor.legacy:hardware/lineage/interfaces" \
   "android.hidl:system/libhidl/transport"
