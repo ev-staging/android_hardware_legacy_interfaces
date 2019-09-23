@@ -18,7 +18,6 @@ LOCAL_PATH := $(call my-dir)
 ###
 include $(CLEAR_VARS)
 LOCAL_MODULE := android.hardware.wifi@1.0-legacy_service-lib
-LOCAL_VINTF_FRAGMENTS := android.hardware.wifi@1.0-legacy_service.xml
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_CPPFLAGS := -Wall -Werror -Wextra
@@ -78,6 +77,7 @@ include $(BUILD_STATIC_LIBRARY)
 ###
 include $(CLEAR_VARS)
 LOCAL_MODULE := android.hardware.wifi@1.0-service.legacy
+LOCAL_VINTF_FRAGMENTS := android.hardware.wifi@1.0-legacy_service.xml
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_CPPFLAGS := -Wall -Werror -Wextra
